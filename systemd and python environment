@@ -6,7 +6,6 @@ After=network.target
 Type=forking
 PIDFile=/root/env/bin/name_of_service.pid
 Environment=VIRTUAL_ENV="/path_to_virtual_environment example /home/user/env/bin/activate"
-#Environment=PATH="$VIRTUAL_ENV/bin:$PATH"
 ExecStartPre=$VIRTUAL_ENV
 ExecStart=/root/env/bin/path_to_app include any flags such as --start
 RestartSec=3
